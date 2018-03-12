@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="325.0" prefWidth="370.0">
+         <children>
+            <Label layoutX="139.0" layoutY="11.0" text="Your text">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="inputFromUser" layoutX="77.0" layoutY="39.0" prefHeight="68.0" prefWidth="200.0" promptText="Type text you want to encrypt/decrypt" />
+            <TextArea fx:id="resultText" layoutX="77.0" layoutY="196.0" prefHeight="68.0" prefWidth="200.0" />
+            <Label layoutX="121.0" layoutY="163.0" text="Changed text">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="encodeButton" layoutX="92.0" layoutY="121.0" mnemonicParsing="false" onAction="#encodeButtonClick" text="Encode" />
+            <Button fx:id="decodeButton" layoutX="204.0" layoutY="121.0" mnemonicParsing="false" onAction="#decodeButtonClick" text="Decode" />
+            <Button fx:id="resetButton" layoutX="237.0" layoutY="275.0" mnemonicParsing="false" onAction="#resetButtonClick" text="Reset" />
+            <Button fx:id="exitButton" layoutX="297.0" layoutY="275.0" mnemonicParsing="false" onAction="#exitButtonClick" text="Exit" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
